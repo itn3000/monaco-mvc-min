@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Monaco Page";
+}
+
+<div id="editor-container" style="width:800px;height:300px;border:1px solid grey"></div>
+<div id="vue-container">
+    <form action="~/Home/Download" method="POST" target="_blank" v-on:submit="onDownload($event)">
+        <input type="hidden" v-model="editorText" name="editorText"></input>
+        <button type="submit">Download</button>
+    </form>
+    <p>
+        editorText is {{editorText}}
+    </p>
+</div>
+<!--<script src="~/jslib/monaco-editor/min/vs/loader.js"></script>-->
+<script src="~/jslib/requirejs/require.js"></script>
+<script src="~/js/site.js"></script>

@@ -1,0 +1,6 @@
+project.lock.json
+node_modules/
+bin/
+obj/
+js/site.min.js
+.vscode/
